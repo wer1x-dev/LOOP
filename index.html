@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOOP — школа Python. Пиши код с первой минуты.</title>
+<meta name="description" content="LOOP — школа Python-программирования для начинающих и практиков. Живые проекты, код-ревью, трудоустройство.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader__code">
+    <span class="kw">while</span> <span class="fn">not</span> loaded:<br>
+    &nbsp;&nbsp;render <span class="str">"loop"</span>
+  </div>
+  <div class="preloader__bar"><span></span></div>
+</div>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="noise"></div>
+
+<header class="header" id="header">
+  <a href="#hero" class="logo" data-scroll>LOOP<span>.</span></a>
+  <nav class="nav" id="nav">
+    <a href="#method" data-scroll>Метод</a>
+    <a href="#course" data-scroll>Программа</a>
+    <a href="#code" data-scroll>Песочница</a>
+    <a href="#price" data-scroll>Тарифы</a>
+    <a href="#faq" data-scroll>FAQ</a>
+  </nav>
+  <a href="#contact" class="btn btn--sm header__cta" data-scroll>Записаться</a>
+  <button class="burger" id="burger" aria-label="Меню"><span></span><span></span></button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <div class="hero__grid"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+  </div>
+  <div class="container hero__inner">
+    <div class="hero__left">
+      <div class="hero__tag reveal">школа python · набор 2026 открыт</div>
+      <h1 class="hero__title">
+        <span class="line"><em>while</em></span>
+        <span class="line">ты не пишешь</span>
+        <span class="line">код <em>сам</em> —</span>
+        <span class="line">цикл не закончится<span class="caret"></span></span>
+      </h1>
+      <p class="hero__text reveal">Первое занятие — ты уже запускаешь свою программу. Без теории ради теории: 80% практики, реальные проекты, код-ревью от действующих разработчиков.</p>
+      <div class="hero__actions reveal">
+        <a href="#contact" class="btn" data-scroll>Начать бесплатно</a>
+        <a href="#course" class="btn btn--ghost" data-scroll>Смотреть программу</a>
+      </div>
+      <div class="hero__stats reveal">
+        <div><b data-count="1240">0</b><span>выпускников</span></div>
+        <div><b data-count="87" data-suffix="%">0</b><span>находят работу</span></div>
+        <div><b data-count="6" data-suffix=" мес">0</b><span>до оффера</span></div>
+      </div>
+    </div>
+    <div class="hero__right reveal">
+      <div class="terminal glass">
+        <div class="terminal__bar"><i></i><i></i><i></i><span>loop_studio.py</span></div>
+        <pre class="terminal__body" id="terminal"></pre>
+        <div class="terminal__foot"><span class="dot"></span> python 3.12 · loop student</div>
+      </div>
+    </div>
+  </div>
+  <a href="#method" class="hero__scroll" data-scroll><span></span>скролл</a>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>for skill in python: learn(skill)</span><i>◆</i>
+    <span>while not hired: practice()</span><i>◆</i>
+    <span>print("ваш первый оффер")</span><i>◆</i>
+    <span>import loop</span><i>◆</i>
+    <span>for skill in python: learn(skill)</span><i>◆</i>
+    <span>while not hired: practice()</span><i>◆</i>
+    <span>print("ваш первый оффер")</span><i>◆</i>
+    <span>import loop</span><i>◆</i>
+  </div>
+</div>
+
+<!-- METHOD -->
+<section class="section method" id="method">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__num">01 / метод</span>
+      <h2>Мы не объясняем циклы.<br><em>Мы заставляем их работать на тебя.</em></h2>
+    </div>
+    <div class="method__grid">
+      <article class="mcard glass reveal">
+        <div class="mcard__num">i = 1</div>
+        <h3>Код с первой минуты</h3>
+        <p>Никаких трёх недель теории. На первом занятии ты пишешь и запускаешь рабочую программу — и дальше каждый спринт заканчивается кодом, который работает.</p>
+      </article>
+      <article class="mcard glass reveal" style="--d:.1s">
+        <div class="mcard__num">i += 1</div>
+        <h3>Ревью, а не тесты</h3>
+        <p>Твои работы проверяет живой разработчик. Он комментирует стиль, архитектуру и показывает, как эту задачу решили бы в реальной компании.</p>
+      </article>
+      <article class="mcard glass reveal" style="--d:.2s">
+        <div class="mcard__num">break</div>
+        <h3>Портфолио, а не сертификат</h3>
+        <p>К финалу у тебя 5 проектов на GitHub: от Telegram-бота до аналитического дашборда. Работодателю важно это, а не бумажка.</p>
+      </article>
+    </div>
+    <div class="method__quote reveal">
+      <p>«Средний студент пишет <b>~14 000 строк кода</b> за курс. Это больше, чем джун пишет за первый год в найме.»</p>
+      <span>— методология LOOP</span>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE / PROGRAM -->
+<section class="section course" id="course">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__num">02 / программа</span>
+      <h2>Шесть спринтов.<br><em>Один путь от «Hello, World» до оффера.</em></h2>
+    </div>
+  </div>
+  <div class="container course__timeline">
+    <div class="sprint reveal" data-tilt>
+      <div class="sprint__meta glass"><span class="sprint__idx">01</span><h3>Основы и логика</h3><p>Переменные, условия, циклы <code>for</code> и <code>while</code>. Первые 20 задач, первые баги, первая победа.</p><span class="sprint__weeks">недели 1–3</span></div>
+      <div class="sprint__code"><pre><span class="kw">for</span> day <span class="kw">in</span> range(<span class="num">21</span>):
+    practice(<span class="str">"основы"</span>)</pre></div>
+    </div>
+    <div class="sprint reveal" style="--d:.08s" data-tilt>
+      <div class="sprint__meta glass"><span class="sprint__idx">02</span><h3>Структуры данных</h3><p>Списки, словари, множества. Учимся выбирать правильный инструмент под задачу, а не «какую-нибудь переменную».</p><span class="sprint__weeks">недели 4–6</span></div>
+      <div class="sprint__code"><pre>skills = [<span class="str">"lists"</span>, <span class="str">"dicts"</span>]
+<span class="kw">for</span> s <span class="kw">in</span> skills: learn(s)</pre></div>
+    </div>
+    <div class="sprint reveal" style="--d:.16s" data-tilt>
+      <div class="sprint__meta glass"><span class="sprint__idx">03</span><h3>Функции и чистый код</h3><p>Декомпозиция, DRY, обработка ошибок. Пишем код, который прочитает другой человек — и не заплачет.</p><span class="sprint__weeks">недели 7–9</span></div>
+      <div class="sprint__code"><pre><span class="kw">def</span> <span class="fn">clean</span>(code):
+    <span class="kw">return</span> readable(code)</pre></div>
+    </div>
+    <div class="sprint reveal" style="--d:.24s" data-tilt>
+      <div class="sprint__meta glass"><span class="sprint__idx">04</span><h3>ОПП и проект #1</h3><p>Классы, наследование, Telegram-бот для реального клиента из нашего пула партнёров. Первая строка в резюме.</p><span class="sprint__weeks">недели 10–14</span></div>
+      <div class="sprint__code"><pre><span class="kw">class</span> <span class="fn">Junior</span>(Student):
+    ship(<span class="str">"bot v1.0"</span>) ✓</pre></div>
+    </div>
+    <div class="sprint reveal" style="--d:.32s" data-tilt>
+      <div class="sprint__meta glass"><span class="sprint__idx">05</span><h3>Данные и автоматизация</h3><p>Файлы, API, парсинг, pandas. Автоматизируем рутину — и понимаем, за что платят аналитикам.</p><span class="sprint__weeks">недели 15–19</span></div>
+      <div class="sprint__code"><pre><span class="kw">import</span> pandas <span class="kw">as</span> pd
+df = pd.read_csv(<span class="str">"job.csv"</span>)</pre></div>
+    </div>
+    <div class="sprint reveal" style="--d:.4s" data-tilt>
+      <div class="sprint__meta glass"><span class="sprint__idx">06</span><h3>Трудоустройство</h3><p>Резюме, GitHub, мок-интервью с действующими тимлидами. 87% выпускников получают оффер в течение полугода.</p><span class="sprint__weeks">недели 20–24</span></div>
+      <div class="sprint__code"><pre><span class="kw">while</span> <span class="kw">not</span> hired:
+    interview()
+<span class="fn">break</span>  <span class="cm"># оффер 🎉</span></pre></div>
+    </div>
+  </div>
+</section>
+
+<!-- CODE PLAYGROUND -->
+<section class="section playground" id="code">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__num">03 / песочница</span>
+      <h2>Попробуй прямо сейчас.<br><em>Так выглядит твой первый урок.</em></h2>
+    </div>
+    <div class="playground__wrap">
+      <div class="playground__editor glass">
+        <div class="terminal__bar"><i></i><i></i><i></i><span>try_me.py — редактируй и запускай</span></div>
+        <textarea id="codeInput" spellcheck="false" aria-label="Редактор кода">n = 1
+total = 0
+while n <= 10:
+    total += n
+    n += 1
+
+print(f"Сумма чисел 1..10 = {total}")</textarea>
+        <div class="playground__hint">Подсказка: попробуй изменить 10 на 100 и запусти снова.</div>
+      </div>
+      <div class="playground__out glass">
+        <div class="terminal__bar"><i></i><i></i><i></i><span>вывод</span></div>
+        <pre id="codeOutput">— нажми «Запустить» —</pre>
+        <button class="btn btn--full" id="runBtn">▶ Запустить</button>
+      </div>
+    </div>
+    <p class="playground__note reveal">Это настоящая микро-симуляция на JS — она выполняет ограничения из первых уроков LOOP: <code>while</code>, счётчики, <code>print()</code>. Полноценный интерпретатор откроется на первом занятии.</p>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="section price" id="price">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__num">04 / тарифы</span>
+      <h2>Честные цены.<br><em>Без «скидки 90% только сегодня».</em></h2>
+    </div>
+    <div class="price__grid">
+      <article class="plan glass reveal">
+        <h3>Самостоятельный</h3>
+        <div class="plan__price">4 900 ₽<span>/мес</span></div>
+        <ul>
+          <li>Все уроки и 300+ задач</li>
+          <li>Автопроверка кода</li>
+          <li>Чат сообщества</li>
+          <li>Доступ 12 месяцев</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--full" data-scroll data-plan="Самостоятельный">Выбрать</a>
+      </article>
+      <article class="plan plan--hit glass reveal" style="--d:.1s">
+        <span class="plan__badge">выбор 78% студентов</span>
+        <h3>С наставником</h3>
+        <div class="plan__price">12 900 ₽<span>/мес</span></div>
+        <ul>
+          <li>Всё из «Самостоятельного»</li>
+          <li>Личный наставник-разработчик</li>
+          <li>Код-ревью каждой работы</li>
+          <li>Живые воркшопы 2×/нед</li>
+          <li>Помощь с портфолио</li>
+        </ul>
+        <a href="#contact" class="btn btn--full" data-scroll data-plan="С наставником">Выбрать</a>
+      </article>
+      <article class="plan glass reveal" style="--d:.2s">
+        <h3>Карьерный</h3>
+        <div class="plan__price">24 900 ₽<span>/мес</span></div>
+        <ul>
+          <li>Всё из «С наставником»</li>
+          <li>Мок-интервью с тимлидами</li>
+          <li>Гарантия трудоустройства*</li>
+          <li>Стажировка у партнёров</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--full" data-scroll data-plan="Карьерный">Выбрать</a>
+      </article>
+    </div>
+    <p class="price__note reveal">* гарантируем возвращение стоимости курса, если оффера нет через 6 месяцев после выпуска при выполнении программы.</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__num">05 / выпускники</span>
+      <h2>Их цикл <em>break</em> сработал.</h2>
+    </div>
+    <div class="reviews__grid">
+      <figure class="review glass reveal">
+        <blockquote>«Я приходила с нуля, бухгалтерией в прошлом. Через 7 месяцев — junior-разработчик в финтехе. Код-ревью — лучшее, что есть в LOOP.»</blockquote>
+        <figcaption><b>Алина К.</b><span>Junior Python Developer, Москва</span></figcaption>
+      </figure>
+      <figure class="review glass reveal" style="--d:.1s">
+        <blockquote>«Автоматизировал отчёты на работе ещё до конца курса — поднял зарплату на 30%, не меняя профессию. Python — это чит-код.»</blockquote>
+        <figcaption><b>Дмитрий С.</b><span>Аналитик, логистика</span></figcaption>
+      </figure>
+      <figure class="review glass reveal" style="--d:.2s">
+        <blockquote>«Бот из четвёртого спринта теперь ведёт магазин друга — 40 заказов в день. Обычный учебный проект стал реальным бизнесом.»</blockquote>
+        <figcaption><b>Марат Ж.</b><span>Фрилансер, Казань</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container container--narrow">
+    <div class="section__head">
+      <span class="section__num">06 / вопросы</span>
+      <h2>Отвечаем <em>без маркетинга.</em></h2>
+    </div>
+    <div class="faq__list">
+      <details class="faq__item reveal"><summary>Нужен ли опыт в программировании?<span class="faq__icon">+</span></summary><p>Нет. 70% студентов приходят с нуля. Первый спринт специально построен так, чтобы «непрограммист» не выпал из темпа.</p></details>
+      <details class="faq__item reveal" style="--d:.06s"><summary>Сколько времени нужно в неделю?<span class="faq__icon">+</span></summary><p>От 6 часов: два вечерних занятия и самостоятельная практика в удобное время. Всё записывается, можно догонять в своём темпе.</p></details>
+      <details class="faq__item reveal" style="--d:.12s"><summary>Что если я не пойду в найм?<span class="faq__icon">+</span></summary><p>Большинство навыков работает сразу: автоматизация рутины, анализ данных, свои скрипты и боты. Карьерный тариф покрывает и этот сценарий гарантией.</p></details>
+      <details class="faq__item reveal" style="--d:.18s"><summary>Есть ли рассрочка?<span class="faq__icon">+</span></summary><p>Да, от 2 100 ₽/мес без процентов — оформляется за 5 минут на первом занятии. Первые 2 недели — бесплатный доступ, оплата только если остаётесь.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="container contact__inner">
+    <div class="contact__left">
+      <span class="section__num">07 / запись</span>
+      <h2>Первые 2 недели —<br><em>бесплатно. Без карты.</em></h2>
+      <p>Оставь контакты — куратор напишет в течение дня, поможет выбрать тариф и пришлёт доступ к пробному спринту.</p>
+      <div class="contact__links">
+        <a href="mailto:hello@loop.school">hello@loop.school</a>
+        <a href="tel:+79001234567">+7 900 123-45-67</a>
+        <a href="https://t.me/loop_school" target="_blank" rel="noopener">t.me/loop_school</a>
+      </div>
+    </div>
+    <form class="contact__form glass" id="form" novalidate>
+      <div class="field"><label for="f-name">Имя</label><input id="f-name" name="name" type="text" placeholder="Как к тебе обращаться?" required minlength="2"><span class="field__err"></span></div>
+      <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" placeholder="+7 ___ ___-__-__" required><span class="field__err"></span></div>
+      <div class="field"><label for="f-plan">Тариф</label>
+        <select id="f-plan" name="plan" required>
+          <option value="" selected disabled>Выбери направление</option>
+          <option>Самостоятельный</option>
+          <option>С наставником</option>
+          <option>Карьерный</option>
+          <option>Пока не знаю</option>
+        </select><span class="field__err"></span>
+      </div>
+      <div class="field"><label for="f-msg">Вопрос (необязательно)</label><textarea id="f-msg" name="msg" rows="3" maxlength="500" placeholder="Например: реально ли с нуля за 6 месяцев?"></textarea><span class="field__err"></span></div>
+      <label class="field field--check"><input type="checkbox" id="f-agree" required><span>Согласен(а) с обработкой персональных данных</span></label>
+      <button type="submit" class="btn btn--full" id="submitBtn">Получить доступ</button>
+      <p class="form__ok" id="formOk">✓ Заявка принята! Куратор напишет тебе в течение дня.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#hero" class="logo" data-scroll>LOOP<span>.</span></a>
+    <p>while not hired: practice() — © 2026 LOOP, школа Python</p>
+    <a href="#contact" data-scroll>Связаться</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
